@@ -55,7 +55,13 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  border: 3px solid var(--purple);
+  padding: 5px;
+  border: solid var(--purple);
+  border-width: 3px 3px 0 3px;
+}
+
+.last {
+  border-width: 3px;
 }
 
 .row_group {
