@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@300;400;700&family=Lato&display=swap');
+
+* {
+  --pink: #E72276;
+  --purple: #B42C86;
+  --red: #E54338;
+  --orange: #FF9E1A;
+}
+
+body {
+  position: relative;
+  font-family: 'Exo', sans-serif;
+/*   box-sizing: border-box; */
+}
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.inner-wrapper {
+  height: 100vh;
+}
+
+h1 {
+  text-align: center;
+}
+
+#top {
+  position: absolute;
+  top: 10px;
+  width: 100%;
+/*   height: auto; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-start;
+}
+
+#bottom {
+  position: absolute;
+  bottom: 50px;
+  width: 90%;
+  height: auto;
+  margin: 0 auto;
+/*   display: flex;
+  flex-direction: row;
+  flex-wrap: no-wrap;
+  justify-content: flex-start; */
+}
+
+.outer_row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  border: 3px solid var(--purple);
+}
+
+.row_group {
+  display: flex;
+  flex-direction: column;
+  flex: 1 auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 auto;
+}
+
+.bottom_wall {
+  height: 35px;
+  border: 7px solid var(--orange);
+  flex: 1 auto;
+}
+
+.label {
+  width: 100px;
+  padding: 5px;
+  text-align: cetner;
+  font-family: 'Lato', sans-serif;
+}
+
+.wall {
+  min-width: 100px;
+  height: 35px;
+  border: 7px solid grey;
+  flex-grow: 1;
+}
+
+.brick {
+  width: auto;
+  height: 27px;
+  color: white;
+  background-color: var(--pink);
+  text-align: center;
+  padding: 8px 8px 0;
+  font-family: 'Lato', sans-serif;
+}
+
+.footer {
+  margin: 5px 0;
+}
