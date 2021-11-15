@@ -38,6 +38,7 @@ function addBricks() {
     brick.classList.add('brick');
     brick.setAttribute('draggable', 'true');
     brick.addEventListener('dragstart', drag);
+    brick.addEventListener('dragend', dragEnd);
     space.append(brick);
   });
 }
@@ -48,12 +49,17 @@ function allowDrop(ev) {
 
 function drag(ev) {
   ev.dataTransfer.setData('text', ev.target.id);
+  this.style.opacity = "0.4";
 }
 
 function drop(ev) {
   ev.preventDefault();
   var data = ev.dataTransfer.getData('text');
   ev.target.appendChild(document.getElementById(data));
+}
+
+function dragEnd(ev) {
+  this.style.opacity = "1";
 }
 
 const walls = document.querySelectorAll('.wall, .bottom_wall');
